@@ -3,7 +3,10 @@
 {
 	"name": "Existing Dockerfile",
 	"build": {
-		"dockerfile": "./Dockerfile"
+		"dockerfile": "./Dockerfile",
+		"args": {
+			"FLUTTER_VERSION": "stable",
+		}
 	},
 	"customizations": {
 		"vscode": {

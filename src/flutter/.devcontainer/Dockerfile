@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/base:debian
 
 ARG USER=vscode
+ARG FLUTTER_VERSION=stable
 
 # Install linux dependencies
 RUN apt-get update &&\
