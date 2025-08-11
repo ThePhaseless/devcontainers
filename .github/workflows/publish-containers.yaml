@@ -28,7 +28,7 @@ jobs:
       folders: ${{ steps.devcontainer-folders.outputs.folders }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Get devcontainer folders
         id: devcontainer-folders
@@ -49,7 +49,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Get lowercase repo name
         id: lowercase-repo
         run: echo "repo=${GITHUB_REPOSITORY@L}" >> $GITHUB_OUTPUT
